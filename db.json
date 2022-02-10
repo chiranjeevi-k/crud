@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "name": "image",
+      "email": "abc@gmail.com",
+      "salary": 52654,
+      "phone": 12345678,
+      "id": 1
+    },
+    {
+      "name": "java",
+      "email": "java@java.com",
+      "salary": 58545,
+      "phone": 987654321,
+      "id": 2
+    },
+    {
+      "name": "c",
+      "email": "c@c.com",
+      "salary": 65985,
+      "phone": 60606060,
+      "id": 3
+    },
+    {
+      "name": "sharp",
+      "email": "sharp@sharp.com",
+      "salary": 524212,
+      "phone": 2352215521,
+      "id": 4
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

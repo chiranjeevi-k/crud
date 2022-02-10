@@ -1,0 +1,23 @@
+
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="email" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Enter name" formControlName="name">
+    </div>
+      
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email" formControlName="email">
+    </div>
+
+    <div class="form-group">
+      <label for="salary">salary</label>
+      <input type="number" class="form-control" id="salary" placeholder="Password" name="salary" formControlName="salary">
+    </div>
+    <div class="form-group">
+        <label for="phone">phone</label>
+        <input type="number" class="form-control" id="phone" placeholder="phone" name="phone" formControlName="phone">
+      </div>
+    
+    <button  class="btn btn-primary" (click)="add()">Add</button>
+  </form>
