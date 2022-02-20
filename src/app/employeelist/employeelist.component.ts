@@ -8,7 +8,7 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./employeelist.component.css']
 })
 export class EmployeelistComponent implements OnInit {
-  employees:any=[]
+  employees:Employee[]=[]
   constructor(public service:ServiceService) { }
 
   ngOnInit(): void {
@@ -22,11 +22,11 @@ export class EmployeelistComponent implements OnInit {
     })
   }
 
-   deleteempid(id:any){
+  deleteempid(id:any){
        this.service.deleteemp(id).subscribe(d=>{
          alert("deleted successfully")
          this.getallemps()
        })
-   }
+  }
 
 }

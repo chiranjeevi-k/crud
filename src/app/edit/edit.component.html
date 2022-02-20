@@ -1,6 +1,7 @@
 
 <div *ngIf="loaded">
-    <form [formGroup]="form">
+  
+    <form [formGroup]="form" *ngIf="id">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="email" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Enter name" formControlName="name">
@@ -18,9 +19,10 @@
         <div class="form-group">
             <label for="phone">phone</label>
             <input type="number" class="form-control" id="phone" placeholder="phone" name="phone" formControlName="phone">
-          </div>
+        </div>
         
-        <button  class="btn btn-primary" (click)="save()">save</button>
+        <button  class="btn btn-primary button" (click)="save()">save</button> &nbsp;
+         <button class="btn btn-danger" (click)="cancel()">cancel</button> 
       </form>
     
 </div>

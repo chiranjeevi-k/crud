@@ -1,21 +1,21 @@
 <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Salary</th>
-        <th>Phone</th>
-        <th>Action</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let emp of employees">
-        <td>{{emp.name}}</td>
-        <td>{{emp.email}}</td>
-        <td>{{emp.salary}}</td>
-        <td>{{emp.phone}}</td>
-        <td><a [routerLink]="['edit',emp.id]">edit</a></td>
-        <td><button class="btn btn-danger" (click)="deleteempid(emp.id)">Delete</button></td>
-      </tr>
-    </tbody>
-  </table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Salary</th>
+      <th>Phone</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+      <td id="tablename">{{emp.name}}</td>
+      <td>{{emp.email}}</td>
+      <td>{{emp.salary}}</td>
+      <td>{{emp.phone}}</td>
+      <td><a [routerLink]="['edit',emp.id]">edit</a></td>
+      <td><button class="btn btn-danger delete" (click)="deleteempid(emp.id)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

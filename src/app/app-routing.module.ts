@@ -4,7 +4,7 @@ import { AddemployeeComponent } from './addemployee/addemployee.component';
 import { EditComponent } from './edit/edit.component';
 import { EmployeelistComponent } from './employeelist/employeelist.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   
   {path:'add',component:AddemployeeComponent},
 
